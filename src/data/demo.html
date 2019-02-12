@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  var contacts = {"M":[{"firstName":"Matti","lastName":"Meikäläinen","numbers":["388 992 0121"]},{"firstName":"Mari","lastName":"Suntio","numbers":["551 899 4443"]},{"firstName":"Mikko","lastName":"Autio","numbers":["654 780 0055"]}],"J":[{"firstName":"Jyrki","lastName":"Rautio","numbers":["333 725 900"]},{"firstName":"Janne","lastName":"Holma","numbers":["913 920 8123","899 010 0044"]}],"L":[{"firstName":"Laura","lastName":"Pyykkö","numbers":["555 788 3123"]},{"firstName":"Leena","lastName":"Lahti","numbers":["454 550 7493","499 110 4403"]}],"N":[{"firstName":"Niilo","lastName":"Leskinen","numbers":["141 455 3645"]}],"S":[{"firstName":"Sami","lastName":"Erkkilä","numbers":["123 890 4555"]}],"V":[{"firstName":"Valtteri","lastName":"Heinämäki","numbers":["111 790 0453"]},{"firstName":"Ville","lastName":"Äänikoski","numbers":["333 990 0123"]}],"P":[{"firstName":"Pekka","lastName":"Peltomäki","numbers":["333 990 0123"]},{"firstName":"Pasi","lastName":"Nuuksio","numbers":["125 090 0103","877 050 4502"]}],"C":[{"firstName":"Cecilia","lastName":"Ekström","numbers":["543 980 0123"]}],"D":[{"firstName":"David","lastName":"Wikström","numbers":["909 991 0133"]}],"T":[{"firstName":"Timo","lastName":"Ylistaro","numbers":["788 290 1423"]}],"R":[{"firstName":"Reino","lastName":"Tossavainen","numbers":["198 345 8886"]}]};
+
+  var keys = Object.keys(contacts).sort();
+  console.log(keys);
+  var newObj = {}
+  for(var i = 0; i < keys.length; i++){
+    var index = keys[i];
+    newObj[index] = contacts[index];
+  }
+  console.dir(newObj);
+
+</script>
+</html>
